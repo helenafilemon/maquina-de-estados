@@ -17,7 +17,7 @@ module contador (
 	);
 	
 	// instancia do contador de 10
-	contador_0a10 (
+	contador10 (
 		.clk(clk),
 		.rst(rst),
 		.enable(pulso_para_contador),		// recebe o pulso como enable
@@ -25,7 +25,7 @@ module contador (
 	);
 endmodule 
 
-module contador_0a10 (
+module contador10 (
 	input wire clk,
 	input wire rst,
 	input wire enable, // só conta se o enable for 1
@@ -37,7 +37,7 @@ module contador_0a10 (
 		if (rst) begin	// se o rst estivr ativo, zera o contador
 			S <= 4'b0000;
 		end else if (enable) begin	// apenas se o enable for 1
-			if (S == 4'd10) begin	// chega em 10 -> volta pra zero
+			if (S == 4'd9) begin	// chega em 10 -> volta pra zero
 				S <= 4'b0000;
 			end else begin
 				S <= S + 1;	// incrementa 1
