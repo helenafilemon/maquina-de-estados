@@ -37,7 +37,7 @@ module contador10 (
 		if (rst) begin	// se o rst estivr ativo, zera o contador
 			S <= 4'b0000;
 		end else if (enable) begin	// apenas se o enable for 1
-			if (S == 4'd9) begin	// chega em 10 -> volta pra zero
+			if (S == 4'd9) begin	// chega em 9, -> volta pra zero
 				S <= 4'b0000;
 			end else begin
 				S <= S + 1;	// incrementa 1
