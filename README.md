@@ -4,7 +4,7 @@
  </div>
 
  <div align="center">  
-  <img width=20% src="http://img.shields.io/static/v1?label=STATUS&message=EM DESENVOLVIMENTO&color=9932CC&style=for-the-badge"/>
+  <img width=20% src="http://img.shields.io/static/v1?label=STATUS&message=FINALIZADO&color=9932CC&style=for-the-badge"/>
 </div>
  
 <p align="center">  </p>
