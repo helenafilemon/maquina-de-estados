@@ -1,4 +1,4 @@
-module contador (
+module contadorduzia (
 	input wire clk,
 	input wire rst,
 	output wire [3:0] cont_12_out,	// saída do contador de 12
@@ -68,6 +68,11 @@ module contador12 (
 			end else begin
 				cont_12 <= cont_12 + 1;	// incrementa 1
 			end
+		end
+	end
+endmodule
+
+
 		end
 	end
 endmodule
